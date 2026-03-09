@@ -1,2 +1,2 @@
 # old---Reid-Pack
-test
+以前使用していたReidシステムのデータパック

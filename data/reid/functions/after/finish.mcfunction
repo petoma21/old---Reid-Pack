@@ -1,0 +1,4 @@
+tellraw @a[scores={raid_advance=0..3}] [{"text":"=========================\n\n","color":"yellow","bold":true},{"text":"交易時間は終了しました。","color":"yellow","bold":true},{"text":"\nこれにてレイドは終了です。ありがとうございました!!","color":"yellow","bold":true},{"text":"\n\n=========================","color":"yellow","bold":true}]
+execute as @a[scores={raid_advance=0..3}] at @s if dimension minecraft:reid run execute in minecraft:reid run playsound minecraft:block.respawn_anchor.deplete master @s ~ ~ ~ 1 1
+execute as @a[scores={raid_advance=0..3}] at @s if dimension minecraft:reid run execute in minecraft:reid run tp @s 0.49 -54.00 -66.30 -539.85 -1.35
+function reid:after/all_reset
